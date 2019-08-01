@@ -1,0 +1,299 @@
+.content {
+  background: url('../images/body_bgrd.img');
+}
+.content {
+  margin-bottom: 4em;
+}
+
+section h2 {
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  width: 5em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.gallery {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 2em;
+  /* grid-auto-flow: dense; */
+}
+
+.gallery li {
+  overflow: hidden;
+  list-style: none outside;
+  box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease-in;
+  animation-fill-mode: both;
+
+}
+
+.gallery li:after {
+  box-shadow: inset 0 0 10px #534d4d;
+  content:'';
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+}
+
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.first-box > img {
+  width: 8em;
+  height: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  border-radius: 0.3em;
+}
+
+.first-box {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background: rgb(238, 238, 238);
+  text-align: center;
+  padding: 1.5em;
+
+}
+
+.first-box h4 {
+  font: 20px/1.5 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+.first-box p {
+  font: 16px/1.8 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.gallery li:nth-child(2) { grid-column: 3 / span 2; grid-row: 1 / span 1; }
+.gallery li:nth-child(7) { grid-column: 1 / span 2; grid-row: 4 / span 1; }
+.gallery li:nth-child(8) { grid-column: 3 / span 2; grid-row: 3 / span 2; }
+.gallery li:nth-child(9) { grid-column: 1 / span 2; grid-row: 5 / span 2; }
+.gallery li:nth-child(10) { grid-column: 3 / span 2; grid-row: 5 / span 1; }
+.gallery li:nth-child(15) { grid-column: 1 / span 2; grid-row: 8 / span 1; }
+.gallery li:nth-child(16) { grid-column: 3 / span 2; grid-row: 7 / span 2; }
+
+.gallery li > a {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.gallery li > a:hover img {
+  position: relative;
+  z-index: 1;
+}
+
+.gallery li > a:hover:before {
+  content: '';
+  display: block;
+  background: rgba(0,0,0,0.4);
+  z-index: 2;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+
+
+
+.gallery-nails {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 2em;
+  /* grid-auto-flow: dense; */
+}
+
+.gallery-nails li {
+  overflow: hidden;
+  list-style: none outside;
+  box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease-in;
+  animation-fill-mode: both;
+
+}
+
+.gallery-nails li:after {
+  box-shadow: inset 0 0 10px #534d4d;
+  content:'';
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+}
+
+
+.gallery-nails img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.nail-big > img {
+  width: 8em;
+  height: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  border-radius: 0.3em;
+}
+
+.nail-big {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background: rgb(238, 238, 238);
+  text-align: center;
+  padding: 1.5em;
+
+}
+
+.nail-big h4 {
+  font: 20px/1.5 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+.nail-big p {
+  font: 16px/1.8 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.gallery-nails li:nth-child(2) { grid-column: 3 / span 2; grid-row: 1 / span 1; }
+.gallery-nails li:nth-child(7) { grid-column: 1 / span 2; grid-row: 4 / span 1; }
+.gallery-nails li:nth-child(8) { grid-column: 3 / span 2; grid-row: 3 / span 2; }
+.gallery-nails li:nth-child(9) { grid-column: 1 / span 2; grid-row: 5 / span 2; }
+.gallery-nails li:nth-child(10) { grid-column: 3 / span 2; grid-row: 5 / span 1; }
+.gallery-nails li:nth-child(15) { grid-column: 1 / span 2; grid-row: 8 / span 1; }
+.gallery-nails li:nth-child(16) { grid-column: 3 / span 2; grid-row: 7 / span 2; }
+
+.gallery-nails li > a {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.gallery-nails li > a:hover img {
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-nails li > a:hover:before {
+  content: '';
+  display: block;
+  background: rgba(0,0,0,0.4);
+  z-index: 2;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+
+
+/*
+ .gallery {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery li {
+    display: flex;
+    flex: 0 0 30%;
+    list-style: none outside;
+    margin-bottom: 5%;
+    position: relative;
+    box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.5);
+    animation: slideIn 0.3s ease-in;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 900px) {
+    .gallery li {
+        flex: 0 0 47%;
+        margin-bottom: 6%;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery li {
+        flex: 0 0 100%;
+        margin-bottom: 3%;
+    }
+}
+
+.gallery li:nth-child(2) { animation-delay: 0.2s; }
+.gallery li:nth-child(3) { animation-delay: 0.3s; }
+.gallery li:nth-child(4) { animation-delay: 0.4s; }
+.gallery li:nth-child(5) { animation-delay: 0.5s; }
+.gallery li:nth-child(6) { animation-delay: 0.6s; }
+.gallery li:nth-child(7) { animation-delay: 0.7s; }
+
+.gallery li:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top:0; left: 0; right: 0; bottom: 0;
+    box-shadow: 0 0 1.1em 0 rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.gallery li:hover:before {
+    opacity: 1;
+}
+
+.gallery a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.5em solid #222;
+    justify-content: center;
+    padding: 1em;
+    background: #FFF;
+}
+
+.gallery span {
+    display: block;
+    position: relative;
+}
+
+.gallery span:before {
+    display: block;
+    position: absolute;
+    content:'';
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    transition: opacity 0.3s ease-in;
+}
+
+.gallery span:after {
+    display: block;
+    position: absolute;
+    content:'';
+    top: 0; left: 0; right: 0; bottom: 0;
+    box-shadow: 0 0 0.2rem 0 rgba(0,0,0,0.8) inset;
+}
+
+.gallery a:hover span:before {
+    opacity: 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+
+
+
