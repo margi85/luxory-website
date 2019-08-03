@@ -5,7 +5,8 @@
   margin-bottom: 4em;
 }
 
-section h2 {
+.second-section h2,
+.first-section h2 {
   font-size: 3em;
   text-align: center;
   border-bottom: 1px solid #000;
@@ -40,6 +41,13 @@ section h2 {
   content:'';
   position: absolute;
   top: 0; bottom: 0; right: 0; left: 0;
+}
+.gallery li:first-child:after {
+  box-shadow: none;
+}
+
+.gallery-nails li:first-child:after {
+  box-shadow: none;
 }
 
 

@@ -1,0 +1,66 @@
+.image-background {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.background-text h1 {
+  font-size: 5em;
+}
+
+.hair,
+.nails {
+  display: grid;
+}
+
+.nails header,
+.hair header {
+  grid-column: 1 / -1;
+}
+
+.hair ul,
+.nails ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hair li,
+.nails li {
+  flex: 0 0 30%;
+  margin-bottom: 2em;
+}
+
+.hidden-li {
+  visibility: hidden;
+}
+
+.nails header h2,
+.hair header h2 {
+  font:  25px/1.5 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.nails li h2,
+.hair li h2 {
+  font:  20px/1.5 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.nails li p,
+.hair li p {
+  margin-top: -1em;
+  font:  16px/1.5 'Montserrat', sans-serif;
+  font-weight: 300;
+}

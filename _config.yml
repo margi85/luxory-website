@@ -18,7 +18,6 @@ email: your-email@example.com
 description: hair_saloon
 destination: docs
 baseurl: "" # the subpath of your site, e.g. /blog
-# baseurel:"/su-jekyll-nov-jekyll" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: margi85
 github_username:  margi85

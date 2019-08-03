@@ -53,9 +53,9 @@ p, ul, ol {
     padding-bottom: 1.5em;
 }
 
-ul, ol {
+/* ul, ol {
     padding-left: 2em;
-}
+} */
 
 ul ul, ol ul, ul ol, ol ol {
     padding-top: 0.5em;

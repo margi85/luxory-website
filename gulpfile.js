@@ -17,15 +17,20 @@ gulp.task("css", function() {
 });
 
 // Jekyll
-gulp.task("jekyll", function() {
+gulp.task("jekylldev", function() {
 	return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true });
+});
+
+// Jekyll
+gulp.task("jekyllprod", function() {
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /luxory-website"], { stdio: "inherit", shell: true });
 });
 
 gulp.task("watch", function() {
 
 	browserSync.init({
 		server: {
-            baseDir: "./docs/"
+      baseDir: "./docs/"
     }
 	});
 
@@ -38,13 +43,11 @@ gulp.task("watch", function() {
 			"./_layouts/*.html",
 			"./_posts/**/*.*"
 		]
-	).on('change', gulp.series('jekyll') );
+	).on('change', gulp.series('jekylldev') );
 
-  const reloadLater = () => setTimeout(browserSync.reload, 0);
-
-  gulp.watch(['docs/**/*.html', 'docs/**/*.js']).on('change', reloadLater );
+  gulp.watch(['docs/**/*.html', 'docs/**/*.js']).on('change', browserSync.reload );
 });
 
-gulp.task("deploy", gulp.series('jekyll', 'css'));
+gulp.task("deploy", gulp.series('jekyllprod', 'css'));
 
-gulp.task("default", gulp.series('jekyll', 'css', 'watch'));
+gulp.task("default", gulp.series('jekylldev', 'css', 'watch'));
