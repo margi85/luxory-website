@@ -40,6 +40,7 @@
   margin-bottom: 2em;
 }
 
+
 .hidden-li {
   visibility: hidden;
 }
@@ -50,12 +51,18 @@
   font-weight: 700;
   margin: 2em 0;
   text-align: center;
+  color: #363636;
 }
 
 .nails li h2,
 .hair li h2 {
   font:  20px/1.5 'Montserrat', sans-serif;
   font-weight: 500;
+  color: #363636;
+  text-align: center;
+  padding: 0.3em 0;
+  border-radius: 0.2em;
+  border-bottom: 1.5px solid #dfc15e;
 }
 
 .nails li p,
