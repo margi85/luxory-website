@@ -1,0 +1,67 @@
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.map,
+.address-description {
+  flex: 0 0 40%;
+}
+
+.address-description li {
+  font-weight: 200;
+  display: flex;
+}
+
+.address-description li i {
+  flex: 0 0 10%;
+  font-size: 1.3em;
+  text-align: center;
+  align-items: center;
+  margin-top: 0.1em;
+  color: #7e0a7e;
+}
+
+.address-description li .info {
+  flex: 0 0 80%;
+}
+
+.address-columns li h5 {
+  font: 20px/1.5 'Montserrat', sans-serif;
+}
+
+.working-time ul
+.address-columns li p {
+  font: 14px/1.5 'Montserrat', sans-serif;
+}
+
+.address-columns ul {
+  list-style-type: none;
+}
+
+.map p:first-child,
+.address-description p:first-child,
+.address-columns p:first-child {
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+@media ( max-width: 900px ) {
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media ( min-width: 1024px ) {
+
+}
+
+@media ( min-width: 1600px ) {
+
+}
+
+
+
+
