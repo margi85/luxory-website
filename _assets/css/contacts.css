@@ -1,12 +1,19 @@
+
 .contacts-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 60em;
+  margin: 2.5em auto;
 }
 
 .map,
 .address-description {
   flex: 0 0 40%;
+}
+
+.map p {
+  text-align: center;
 }
 
 .address-description li {
@@ -20,7 +27,7 @@
   text-align: center;
   align-items: center;
   margin-top: 0.1em;
-  color: #7e0a7e;
+  color: #dfc15e;
 }
 
 .address-description li .info {

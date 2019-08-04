@@ -1,8 +1,12 @@
-.content {
-  background: url('../images/body_bgrd.img');
-}
+
 .content {
   margin-bottom: 4em;
+}
+
+.first-section,
+.second-section {
+  max-width: 60em;
+  margin: 2em auto;
 }
 
 .second-section h2,
