@@ -1,7 +1,6 @@
 .site {
     max-width: var(--layout-main-width);
     margin: 0 auto;
-    padding: 2em;
 }
 
 @media (min-width: 1024px) {
