@@ -4,16 +4,16 @@
 }
 
 .first-section,
-.second-section {
+.gallery-second {
   max-width: 60em;
   margin: 2em auto;
 }
 
-.second-section h2,
+.gallery-second h2,
 .first-section h2 {
   font-size: 3em;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #dfc15e;
   width: 5em;
   margin: 0 auto;
   margin-bottom: 1em;

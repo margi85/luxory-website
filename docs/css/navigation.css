@@ -1,6 +1,6 @@
 .site-header {
   border-bottom: 1px solid var(--color-border-default);
-  background: #363636;
+  background: #270a0a;
   width: 100%;
   padding: 0 2em;
 }
@@ -35,13 +35,13 @@
   display: block;
   padding: 0.5em 1em;
   border-radius: 0.3em;
-  background: #363636;
+  background: #270a0a;
 }
 
 .site-nav li.selected > a,
 .site-nav a:hover {
   background: var(--color-link-default);
-  color: #363636;
+  color: #270a0a;
 }
 
 .site-nav a i.fas:before {
@@ -51,7 +51,7 @@
 
 .site-nav li.selected > a i.fas:before,
 .site-nav a:hover i.fas:before {
-  color: #363636;
+  color: #270a0a;
 }
 
 
