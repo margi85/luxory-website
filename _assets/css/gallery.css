@@ -101,11 +101,6 @@
   top: 0; left: 0; right: 0; bottom: 0;
 }
 
-.gallery li > a:hover img {
-  position: relative;
-  z-index: 1;
-}
-
 .gallery li > a:hover:before {
   content: '';
   display: block;
@@ -114,9 +109,6 @@
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
 }
-
-
-
 
 .gallery-nails {
   padding: 0;

@@ -1,57 +1,50 @@
+.uslugi-section {
+  max-width: 60em;
+  margin: 2em auto;
+}
 .image-background {
-  position: relative;
-  text-align: center;
-  color: white;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.background-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 2px 2px 2px #000000;
-}
-
-.background-text h1 {
-  font-size: 5em;
-}
-
-.hair,
-.nails {
-  display: grid;
-}
 
 .nails header,
 .hair header {
-  grid-column: 1 / -1;
+  text-align: center;
 }
 
-.hair ul,
-.nails ul {
-  display: flex;
-  list-style-type: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.hair li,
-.nails li {
-  flex: 0 0 30%;
+.nails header h2 {
+  font:  25px/1.5 'Montserrat', sans-serif;
+  font-weight: 700;
   margin-bottom: 2em;
+  text-align: center;
+  color: #363636;
 }
 
-
-.hidden-li {
-  visibility: hidden;
-}
-
-.nails header h2,
 .hair header h2 {
   font:  25px/1.5 'Montserrat', sans-serif;
   font-weight: 700;
   margin: 2em 0;
   text-align: center;
   color: #363636;
+}
+
+.hair ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+.nails ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2em;
 }
 
 .nails li h2,
@@ -71,3 +64,6 @@
   font:  16px/1.5 'Montserrat', sans-serif;
   font-weight: 300;
 }
+
+.hair ul li:nth-child(2) { grid-column: 2 / span 1; grid-row: 1 / span 2; }
+.nails ul li:nth-child(2) { grid-column: 2 / span 1; grid-row: 1 / span 2; }
