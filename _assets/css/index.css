@@ -1,3 +1,8 @@
+
+.content-main {
+  margin-bottom: 0;
+}
+
 .second-section {
   display: flex;
   justify-content: space-between;
@@ -12,7 +17,7 @@
 
 .box-description {
   flex: 0 0 45%;
-  padding: 0 2em 0 0;
+  padding: 0 3em 0 0;
 }
 
 .box-description h2{
@@ -20,6 +25,12 @@
   color: #dfc15e;
   border-bottom: 1px solid #dfc15e;
   font-size: 3em;
+}
+
+.box-description p{
+  font-size: 0.9em;
+  color: #9494a5;
+  text-align: center;
 }
 
 .box-pics ul {
@@ -78,5 +89,54 @@
   max-width: 60em;
   margin: 0 auto;
   font-size: 0.8em;
-  margin-bottom: 2em;
+  padding-bottom: 2.5em;
+}
+
+.section-container {
+  background: #EEE;
+  padding: 3em 0;
+}
+
+.products-section {
+  display: grid;
+  max-width: 50em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: #FFF;
+  margin: 0 auto;
+  grid-gap: 0;
+}
+
+.products-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.products-section .box1,
+.products-section .box3,
+.products-section .box5 {
+  text-align: center;
+  padding: 2em;
+}
+
+.products-section h3 {
+  text-align: center;
+  color: #dfc15e;
+  border-bottom: 1px solid #dfc15e;
+  font-size: 2em;
+}
+
+.products-section p {
+  font-size: 0.9em;
+  color: #9494a5;
+}
+
+@media (max-width: 800px) {
+
+  .second-section {
+    display: block;
+    margin: 0 auto;
+    padding: 1.5em 1.5em;
+  }
 }
