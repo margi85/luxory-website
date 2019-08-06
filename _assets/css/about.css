@@ -96,6 +96,48 @@
   flex: 0 0 30%;
 }
 
+.saloon {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.saloon h2 {
+  text-align: center;
+  font: 1.5em/1.5 'Montserrat', sans-serif;
+  color: #dfc15e;
+  margin: 1.5em 0;
+}
+
+.saloon ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.saloon ul li {
+  flex: 0 0 45%;
+}
+
+.saloon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+
+  .sertificate-gallery li {
+    flex: 0 0 45%;
+    padding-bottom: 1em;
+  }
+
+  .saloon ul {
+    margin: 0 1.5em 1.5em 1.5em;
+  }
+
+}
+
 @media (max-width: 800px) {
   .about-page {
     padding: 2em;
@@ -125,6 +167,12 @@
 
   .sertificate-gallery li img {
     height: 20em;
+  }
+
+  .saloon ul li {
+    flex: 0 0 85%;
+    margin: 0 auto;
+    padding-bottom: 2em;
   }
 
 }
