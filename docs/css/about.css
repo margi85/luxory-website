@@ -1,0 +1,37 @@
+.about-page {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.about-page header h2 {
+  font-size: 3.5em;
+  color: #dfc15e;
+  text-align: center;
+  margin-top: 0.3em;
+}
+
+.about-page span {
+  font: 0.5em/1.5 'Montserrat', sans-serif;
+}
+
+.text-about-lili{
+  margin-bottom: 5em;
+}
+
+.text-about-lili img {
+  float: left;
+  clear: both;
+  margin-right: 2em;
+  border: 5px solid #270a0a;
+}
+
+.text-about-dani img {
+  float: right;
+  clear: both;
+  margin-left: 2em;
+  border: 5px solid #dfc15e;
+}
+
+.text-about-dani ul {
+  margin-left: 2em;
+}
