@@ -14,6 +14,16 @@
   font: 0.5em/1.5 'Montserrat', sans-serif;
 }
 
+.about-page p {
+  font-size: 0.9em;
+  color: #9494a5;
+}
+
+.about-page li {
+  font-size: 0.9em;
+  color: #9494a5;
+}
+
 .text-about-lili{
   margin-bottom: 5em;
 }
@@ -34,4 +44,87 @@
 
 .text-about-dani ul {
   margin-left: 2em;
+}
+
+.sertificates {
+  background: #270a0a;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.sertificates-content {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.sertificates-content h2 {
+  font-family: 'Bad Script', cursive;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 300;
+  padding: 1em;
+  color: #dfc15e;
+}
+
+.sertificates-content p {
+  text-align: center;
+  font-weight: 100;
+  color: #f7f4eb;
+  max-width: 60em;
+  margin: 0 auto;
+  font-size: 0.8em;
+  padding-bottom: 2.5em;
+}
+
+.sertificate-gallery {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.sertificate-gallery img {
+  width: 100%;
+  height: 11em;
+  object-fit: cover;
+}
+
+.sertificate-gallery li {
+  flex: 0 0 30%;
+}
+
+@media (max-width: 800px) {
+  .about-page {
+    padding: 2em;
+  }
+
+  .about-page p,
+  .about-page li,
+  .sertificates-content p{
+    font-size: 1.1em;
+  }
+
+  .sertificate-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .sertificates-content p {
+    padding: 0 2em 2em 2em;
+  }
+
+  .sertificate-gallery li {
+    flex: 0 0 85%;
+    padding-bottom: 2em;
+    margin: 0 auto;
+  }
+
+  .sertificate-gallery li img {
+    height: 20em;
+  }
+
 }
