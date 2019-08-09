@@ -35,6 +35,10 @@
   border: 5px solid #270a0a;
 }
 
+.text-about-dani {
+  clear: both;
+}
+
 .text-about-dani img {
   float: right;
   clear: both;
@@ -128,6 +132,10 @@
 }
 
 @media (max-width: 1024px) {
+
+  .about-page {
+    padding: 2em;
+  }
 
   .sertificate-gallery li {
     flex: 0 0 45%;
