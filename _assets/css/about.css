@@ -30,6 +30,8 @@
 
 .text-about-lili img {
   float: left;
+  width: 14em;
+  height: auto;
   clear: both;
   margin-right: 2em;
   border: 5px solid #270a0a;
@@ -40,6 +42,8 @@
 }
 
 .text-about-dani img {
+  width: 14em;
+  height: auto;
   float: right;
   clear: both;
   margin-left: 2em;
