@@ -94,13 +94,12 @@ blockquote .author:before {
 .site {
   max-width: var(--layout-main-width);
   margin: 0 auto; }
-
-@media (min-width: 1024px) {
-  .site-header {
-    display: flex;
-    align-items: center; }
-  .site-header nav {
-    margin-left: auto; } }
+  @media (min-width: 1024px) {
+    .site-header {
+      display: flex;
+      align-items: center; }
+      .site-header nav {
+        margin-left: auto; } }
 
 .content-main {
   margin-bottom: 0; }
@@ -273,10 +272,9 @@ blockquote .author:before {
   margin: 0;
   padding: 0;
   font-size: 2.5em; }
-
-.site-title a {
-  display: block;
-  color: var(--color-link-default); }
+  .site-title a {
+    display: block;
+    color: var(--color-link-default); }
 
 .site-nav > ul {
   display: flex;
@@ -330,19 +328,15 @@ blockquote .author:before {
 
 .site-footer {
   margin-top: var(--spacing-layout-elements);
-  padding-top: calc( var(--spacing-layout-elements) / 2); }
-
-.site-footer {
+  padding-top: calc( var(--spacing-layout-elements) / 2);
   background: var(--color-link-bgrd);
   color: var(--color-link-default);
   text-align: center;
   font-weight: 200; }
-
-.site-footer a {
-  font-weight: 500; }
-
-.site-footer p {
-  padding-top: 1em; }
+  .site-footer a {
+    font-weight: 500; }
+  .site-footer p {
+    padding-top: 1em; }
 
 @-webkit-keyframes slideIn {
   from {
@@ -367,15 +361,16 @@ blockquote .author:before {
 .gallery-second {
   max-width: 60em;
   margin: 2em auto; }
-
-.gallery-second h2,
-.first-section h2 {
-  font-size: 3em;
-  text-align: center;
-  border-bottom: 1px solid #dfc15e;
-  width: 5em;
-  margin: 0 auto;
-  margin-bottom: 1em; }
+  .first-section h2,
+  .first-section h2,
+  .gallery-second h2,
+  .gallery-second h2 {
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 1px solid #dfc15e;
+    width: 5em;
+    margin: 0 auto;
+    margin-bottom: 1em; }
 
 .gallery-nails,
 .gallery {

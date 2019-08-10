@@ -1,21 +1,17 @@
 .site-footer {
-    margin-top: var(--spacing-layout-elements);
-    padding-top: calc( var(--spacing-layout-elements) / 2);
-}
-
-.site-footer {
+  margin-top: var(--spacing-layout-elements);
+  padding-top: calc( var(--spacing-layout-elements) / 2);
   background: var(--color-link-bgrd);
   color: var(--color-link-default);
   text-align: center;
   font-weight: 200;
+
+  a {
+    font-weight: 500;
+  }
+
+  p {
+    padding-top: 1em;
+  }
+
 }
-
-.site-footer a {
-  font-weight: 500;
-}
-
-.site-footer p {
-  padding-top: 1em;
-}
-
-

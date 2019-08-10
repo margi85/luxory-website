@@ -1,17 +1,20 @@
+@import "mixins";
+
 .site {
     max-width: var(--layout-main-width);
     margin: 0 auto;
-}
 
-@media (min-width: 1024px) {
-    .site-header {
+    @include bp( laptop ) {
+      &-header {
         display: flex;
         align-items: center;
-    }
 
-    .site-header nav {
-        margin-left: auto;
+        nav {
+          margin-left: auto;
+      }
     }
+  }
 }
+
 
 
