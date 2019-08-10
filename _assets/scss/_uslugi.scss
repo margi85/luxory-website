@@ -35,14 +35,7 @@
   color: #363636;
 }
 
-.hair ul {
-  display: grid;
-  list-style-type: none;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 2em;
-}
-
+.hair ul,
 .nails ul {
   display: grid;
   list-style-type: none;

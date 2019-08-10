@@ -9,36 +9,32 @@
 
 .address-description {
   flex: 0 0 40%;
+
+  li {
+    font-weight: 200;
+    display: flex;
+
+    i {
+      flex: 0 0 10%;
+      font-size: 1.3em;
+      text-align: center;
+      align-items: center;
+      margin-top: 0.1em;
+      color: #dfc15e;
+    }
+
+    .info {
+      flex: 0 0 80%;
+    }
+  }
 }
 
 .map {
   flex: 0 0 50%;
-}
 
-.map p {
-  text-align: center;
-}
-
-.address-description li {
-  font-weight: 200;
-  display: flex;
-}
-
-.address-description li i {
-  flex: 0 0 10%;
-  font-size: 1.3em;
-  text-align: center;
-  align-items: center;
-  margin-top: 0.1em;
-  color: #dfc15e;
-}
-
-.address-description li .info {
-  flex: 0 0 80%;
-}
-
-.address-columns li h5 {
-  font: 20px/1.5 'Montserrat', sans-serif;
+  p {
+    text-align: center;
+  }
 }
 
 .working-time ul
@@ -46,21 +42,26 @@
   font: 14px/1.5 'Montserrat', sans-serif;
 }
 
-.address-columns li {
-  margin-left: 0.5em;
-}
-
-.address-columns li a i {
-  padding-right: 0.5em;
-}
-
-.address-columns li a h5 {
-  color: #000;
-}
-
 .address-columns ul {
   list-style-type: none;
-}
+
+   li {
+    margin-left: 0.5em;
+
+      h5 {
+        font: 20px/1.5 'Montserrat', sans-serif;
+      }
+
+      a {
+        i {
+          padding-right: 0.5em;
+        }
+        h5 {
+          color: #000;
+        }
+      }
+    }
+  }
 
 .map p:first-child,
 .address-description p:first-child,
@@ -71,17 +72,18 @@
 
 .map-responsive{
   overflow:hidden;
-  /* padding-bottom:56.25%; */
   position:relative;
   height:70%;
+
+  iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
 }
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
+
 
 @media ( max-width: 800px ) {
   .contacts-container {
@@ -89,10 +91,10 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 2em;
-  }
 
-  .contacts-container p {
-    font-size: 1.2em;
+    p {
+      font-size: 1.2em;
+    }
   }
 
   .working-time li {
@@ -105,13 +107,6 @@
 
 }
 
-@media ( min-width: 1024px ) {
-
-}
-
-@media ( min-width: 1600px ) {
-
-}
 
 
 
