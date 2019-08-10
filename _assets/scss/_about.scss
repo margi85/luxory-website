@@ -5,7 +5,7 @@
 
 .about-page header h2 {
   font-size: 3.5em;
-  color: #dfc15e;
+  color: var(--color-link-default);
   text-align: center;
   margin-top: 0.3em;
 }
@@ -71,7 +71,7 @@
   text-align: center;
   font-weight: 300;
   padding: 1em;
-  color: #dfc15e;
+  color: var(--color-link-default);
 }
 
 .sertificates-content p {
@@ -97,8 +97,7 @@
 .sertificate-gallery img {
   width: 100%;
   height: 11em;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .sertificate-gallery li {
@@ -113,7 +112,7 @@
 .saloon h2 {
   text-align: center;
   font: 1.5em/1.5 'Montserrat', sans-serif;
-  color: #dfc15e;
+  color: var(--color-link-default);
   margin: 1.5em 0;
 }
 
@@ -131,8 +130,7 @@
 .saloon img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {

@@ -4,8 +4,8 @@
 }
 
 .site-footer {
-  background: #270a0a;
-  color: #dfc15e;
+  background: var(--color-link-bgrd);
+  color: var(--color-link-default);
   text-align: center;
   font-weight: 200;
 }
