@@ -1,3 +1,5 @@
+@import "mixins";
+
 .site {
 
   &-header {
@@ -59,45 +61,68 @@
 
 /* nav - responssive */
 
-.toggle-nav-btn .fa-times {
+.toggle-nav-btn {
   display: none;
-}
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  height: 3em;
+  position: absolute;
+  top: -0.25em; right: 0.5em;
+  color: var(--color-link-default);
 
-.fa-times,
-.fa-bars {
-  color: #CCC;
+  .fa-times {
+      display: none;
+  }
 }
 
 .toggle-nav {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  top: 0; left: 0;
-  display: none;
-}
+  top: 0;
+  left: 0;
 
-// @include bp(mobile) {
-//   display: block;
+  @include bp(mobile) {
 
-//   &:checked + .site-header {
-//     background: yellow;
+      & + .site-header {
+          .toggle-nav-btn {
+              display: flex;
+          }
 
-//       .toggle-nav-btn {
+          .site-nav {
+              display: none;
+          }
+      }
 
-//       .fa-bars {
-//         display: none
-//       }
+      &:checked + .site-header {
 
-//       .fa-times {
-//         display: block;
-//       }
-//     }
-//   }
-// }
+          .site-nav {
+              display: block;
 
+              ul {
+                display: flex;
+                flex-direction: column;
 
-.toggle-nav-btn .fa-bars {
-  display: none;
+                li {
+                  text-align: center;
+                }
+              }
+          }
+
+          .toggle-nav-btn {
+
+              .fa-bars {
+                  display: none;
+
+              }
+
+              .fa-times {
+                  display: block;
+              }
+          }
+      }
+  }
 }
 
 
