@@ -296,11 +296,12 @@ blockquote .author:before {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  height: 3em;
+  height: 2.5em;
   position: absolute;
   top: -0.25em;
   right: 0.5em;
-  color: var(--color-link-default); }
+  color: var(--color-link-default);
+  cursor: pointer; }
   .toggle-nav-btn .fa-times {
     display: none; }
 
@@ -315,6 +316,8 @@ blockquote .author:before {
       display: flex; }
     .toggle-nav + .site-header .site-nav {
       display: none; }
+      .toggle-nav + .site-header .site-nav li:first-child {
+        padding: 0 0.5em; }
     .toggle-nav:checked + .site-header .site-nav {
       display: block; }
       .toggle-nav:checked + .site-header .site-nav ul {

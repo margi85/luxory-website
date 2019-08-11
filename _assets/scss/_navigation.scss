@@ -66,10 +66,11 @@
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  height: 3em;
+  height: 2.5em;
   position: absolute;
   top: -0.25em; right: 0.5em;
   color: var(--color-link-default);
+  cursor: pointer;
 
   .fa-times {
       display: none;
@@ -92,6 +93,10 @@
 
           .site-nav {
               display: none;
+
+              li:first-child {
+                padding: 0 0.5em;
+              }
           }
       }
 
